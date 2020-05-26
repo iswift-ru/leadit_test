@@ -24,6 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     setState(() {
       var extractData = jsonDecode(response.body);
+
       return data = extractData;
     });
   }
@@ -64,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         '/secondPage',
                         arguments: id,
                       );
-                      print(id);
+
                     });
                   },
                 ),

@@ -30,8 +30,7 @@ class _SecondPageState extends State<SecondPage> {
   Future<String> makeRequestComments() async {
     String urlComments =
         'https://jsonplaceholder.typicode.com/comments?postId=$id';
-    print("Привет 2 $urlComments");
-    
+
     var responseComments = await http.get(Uri.encodeFull(urlComments),
         headers: {"Accept": "application/json"});
     if (responseComments.statusCode == 200) {

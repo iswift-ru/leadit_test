@@ -57,10 +57,9 @@ class _MyHomePageState extends State<MyHomePage> {
                   trailing: Icon(Icons.comment),
                   leading: Text(data[index]['id'].toString()),
                   onTap: () {
-//
                     setState(() {
                       id = data[index]['id'].toString();
-                      print('Первая страница $id');
+
                       Navigator.of(context).pushNamed(
                         '/secondPage',
                         arguments: id,

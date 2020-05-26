@@ -31,7 +31,7 @@ class _SecondPageState extends State<SecondPage> {
     String urlComments =
         'https://jsonplaceholder.typicode.com/comments?postId=$id';
     print("Привет 2 $urlComments");
-    print('ID $id');
+    
     var responseComments = await http.get(Uri.encodeFull(urlComments),
         headers: {"Accept": "application/json"});
     if (responseComments.statusCode == 200) {
